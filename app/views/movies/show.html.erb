@@ -1,0 +1,7 @@
+<h1><%= @movie.title %></h1>
+<h2><%= @movie.rating %></h2>
+<%= image_tag @movie.poster_url, style: "width: 200px; height: 200px; object-fit: cover", alt: @movie.title %>
+<p><%= @movie.overview %></p>
+
+
+<%= link_to "All films", movies_path %>
